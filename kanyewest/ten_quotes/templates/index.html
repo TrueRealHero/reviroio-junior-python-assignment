@@ -14,11 +14,13 @@
       <main class="px-3">
         <h1>Kanye West Quottaker</h1>
         <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-red">Get Quote</a>
+          <a href="{% url 'kanye-sayings' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-red">Get Quote</a>
         </p>
         {% block content %}
-          {{ quote.quote }}
-        {% endblock %}
+            {% for x in quotes %}
+              {{ x.quote }}<br>
+            {% endfor %}
+          {% endblock %}
       </main>
     </div>
 </body>

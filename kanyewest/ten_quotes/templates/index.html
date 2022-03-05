@@ -18,8 +18,9 @@
           <a href="{% url 'kanye-sayings' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-red">Get Quote</a>
         </p>
         {% block content %}
-            {% for x in result %}
-              {{ x }}<br>
+            {% for x in quotes %}
+              {{ x.kanye_quote }}<br>
+              {{ x.letters_amount }}<br>
             {% endfor %}
           {% endblock %}
       </main>

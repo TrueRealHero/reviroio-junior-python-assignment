@@ -7,9 +7,9 @@ class Quote(models.Model):
     letters_amount = models.IntegerField('Количество букв в цитате', null=True)
     vowels = models.IntegerField('Количество гласных', null=True)
     consonants = models.IntegerField('Количество согласных', null=True)
-    # repeated_letters = models.TextField('Количество одинаковых букв', null=True)
-    # average_len = models.IntegerField('Средняя длинна слов', null=True)
-    # longest_words = models.TextField('Три длиннейших слова', null=True)
+    repeated_letters = models.TextField('Количество появлений каждой буквы', null=True)
+    average_len = models.IntegerField('Средняя длинна слов', null=True)
+    longest_words = models.TextField('Три длиннейших слова', null=True)
 
     def __str__(self):
         return (str(self.kanye_quote))

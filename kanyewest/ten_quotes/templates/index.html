@@ -10,21 +10,29 @@
   </head>
 
 <!-- Всё из бутстрапа -->
-<body class="d-flex h-100 text-center text-white bg-dark">
+<body class="d-flex h-100 text-black bg-light">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <main class="px-3">
-        <h1>Kanye West Quottaker</h1>
+        <h1 class="text-center">Kanye West Quottaker</h1>
         <p class="lead">
           <a href="{% url 'kanye-sayings' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-red">Get Quote</a>
         </p>
         {% block content %}
-            {% for x in quotes %}
-              {{ x.kanye_quote }}<br>
-              {{ x.letters_amount }}<br>
-              {{ x.vowels }}<br>
-              {{ x.consonants }}<br>
+        {% for x in quotes %}
+        </p>
+          <h1>{{ x.kanye_quote }}</h1>
+          <p class="lead">Количество букв: {{ x.letters_amount }}</p>
+          <p class="lead">Гласных: {{ x.vowels }}</p>
+          <p class="lead">Согласных: {{ x.consonants }}</p>
+          <p class="lead">Список букв и количество их появлений: {{ x.repeated_letters }}</p>
+          <p class="lead">Средняя длинна слов: {{ x.average_len }}</p>
+          <p class="lead">Три длиннейших слова: 
+            {% for y in x.longest_words %}
+              {{ y }}
             {% endfor %}
-          {% endblock %}
+            {% endfor %}
+        {% endblock %}
+        </div>
       </main>
     </div>
 </body>

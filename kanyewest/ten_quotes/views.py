@@ -8,7 +8,7 @@ from collections import Counter
 def index(request):
     return render (request, 'index.html')
 
-def get(request):
+def get_quote(request):
     id_of_quotes = []        # Для последующего записи ID, питон будет из этого списка фильтровать объекты
     for x in range(10):        # Получаем 10 цитат
         quote = Quote()         # Создаем объект

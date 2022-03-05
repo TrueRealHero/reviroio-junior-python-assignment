@@ -1,7 +1,7 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 urlpatterns = [
     path('', views.index, name='main'),
-    path('kanye-sayings', views.get, name='kanye-sayings')
+    path('kanye-sayings', views.get_quote, name='kanye-sayings')
 ]

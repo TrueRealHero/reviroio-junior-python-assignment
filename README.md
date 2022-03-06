@@ -23,6 +23,6 @@ Kanye West app
 10. OPEN PORT 8000
 
 # Через локал
-в kanyewest/settings.py поле DATABASE раскоментируйте
-а нижнюю часть наоборот можете убрать
-manage.py runserver или python manage.py runserver
+в kanyewest/settings.py поле DATABASE раскоментируйте <br />
+а нижнюю часть наоборот можете убрать <br />
+manage.py runserver или python manage.py runserver <br />

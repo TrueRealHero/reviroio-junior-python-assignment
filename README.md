@@ -24,5 +24,5 @@ Kanye West app
 
 # Через локал
 в kanyewest/settings.py поле DATABASE раскоментируйте <br />
-а нижнюю часть наоборот можете убрать <br />
+а нижнюю часть наоборот необходимо убрать <br />
 manage.py runserver или python manage.py runserver <br />

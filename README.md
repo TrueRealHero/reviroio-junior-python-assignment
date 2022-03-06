@@ -2,7 +2,7 @@
 
 Kanye West app
 
-структура
+структура <br />
 /kanye-sayings     # Гость получает квоты <br />
 /api         # Записанные в дб цитаты. Readonly <br /> 
 /admin          # админка <br />
@@ -17,9 +17,9 @@ Kanye West app
 6. docker-compose up -d
 7. docker ps копируем или выписываем ID контейнера "reviroio....." (не постгреса)
 8. docker exec -t -i АЙДИ КОНТЕЙНЕРА bash
-9. python manage.py migrate
-    (можно пропустить) python manage.py createsuperuser для доступа в админку
-    как закончит миграцию можно exit
+9. python manage.py migrate<br />
+    (можно пропустить) python manage.py createsuperuser для доступа в админку<br />
+    как закончит миграцию можно exit<br />
 10. OPEN PORT 8000
 
 # Через локал

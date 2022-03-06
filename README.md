@@ -3,9 +3,9 @@
 Kanye West app
 
 структура
-/kanye-sayings     # Гость получает квоты
-/api         # Записанные в дб цитаты. Readonly
-/admin          # админка
+/kanye-sayings     # Гость получает квоты <br />
+/api         # Записанные в дб цитаты. Readonly <br /> 
+/admin          # админка <br />
 
 # Через docker
 заходим в докер

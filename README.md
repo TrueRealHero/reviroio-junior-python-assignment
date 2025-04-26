@@ -11,7 +11,7 @@ Kanye West app
 заходим в докер
 1. git clone https://github.com/TrueRealHero/reviroio-junior-python-assignment.git
 2. user TrueRealHero
-3. токен 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
+3. токен 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ThisisTheend
 4. cd reviroio-junior-python-assignment
 5. docker-compose build
 6. docker-compose up -d
